@@ -37,10 +37,8 @@ public class ToggleSwitch extends Command
 	@Override
 	protected void execute()
 	{
-		if (OI.leftStick.getRawButton(9) == true)
-		{
-			Robot.pneumatics.toggleCompressor();
-			Timer.delay(1);
+		if(OI.toggleSwitch.get()){
+			System.out.println("Switch Pressed");
 		}
 	}
 	
